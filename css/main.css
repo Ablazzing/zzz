@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+:root{
+ --yellow:#ffc914;
+ --grey:#b5c2b7;
+ --black:rgb(46, 40, 42);
+ --blue:#00a7e1;
+ --cream:#eddea4;
+ --white:rgb(245, 243, 245);
+}
+
+body{
+ font-family: 'PT Sans', sans-serif;
+ background: var(--white);
+ color: var(--black);
+}
+
+/* preloader */
+.preloader {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 999;
+}
+/* end of preloader */
+
+/* header */
+.header {
+  min-height: 100vh;
+  align-items: center;
+  display:flex;
+  position: relative;
+}
+
+@media screen and (max-width:768px){
+
+  .header {
+    background: url('../video/Working-it/Snapshots/Working-it.jpg') center/cover fixed no-repeat ;
+  }
+}
+
+.banner {
+  margin-left: 2rem;
+  border-left: 0.5rem solid var(--yellow);
+}
+
+.banner__title{
+   color:var(--blue);
+   margin-left: 1rem;
+   font-size: 3rem;
+   letter-spacing: 0.25rem;
+   text-transform: uppercase;
+}
+
+.banner__title-name {
+ color: var(--yellow);
+ text-decoration: underline;
+ font-size: 4rem;
+ font-style: italic;
+}
+
+.video__container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video__item{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video__overlay {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(245,243,245,0.3);
+  z-index: -1;
+}
+
+/* end of header */
